@@ -1,0 +1,16 @@
+% M = ones(10,1);
+% M(5,1) = 0;
+% index = find(M);
+Q = ones(10,3);
+Q(:,2) = 2.2;
+Q(:,3) = 3.1;
+P = ones(10,3);
+P(:,2) = 2;
+P(:,3) = 3;
+[A, I] = max(P);
+% a = Q(index,1)+P(index,1);
+% b = Q(index,1)+P(index,1);
+% c = Q(index,3).*P(index,3);
+% d = Q(index,2)*3.4;
+% e = Q(index,3)./P(index,3);
+judge = (Q > P);
